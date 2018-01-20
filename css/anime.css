@@ -1,0 +1,109 @@
+
+#bar{
+    top: 30px;  right:1%; /* Положение */
+    padding:1%; /* Поля */
+margin: 0; /* Отступы */
+position: absolute; /* Абсолютное позиционирование */
+width: 3%; /* Ширина */
+background: #00f200; /* Цвет фона */
+color: #fff731; /* Цвет текста */
+text-align: left; /* Выравнивание по центру */
+/* Анимация */
+transition: top 1s ease-out 0.5s; /* Переход */
+transition-duration: 1s; /* длительность анимации */
+}
+#bar:hover {
+top: 0; /* При наведении курсора */
+}
+
+.warn {
+padding: 1%;
+border-radius: 40%;
+border: medium;
+text-align: center;
+transition-duration: 2s;/* Длительность анимации */
+}
+.warn:hover {
+    background: #2E64FE;
+}
+.warm {
+    background: #D7DF01;
+    padding: 1%;
+    top: -50%;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0;
+}
+.fadeInTop{
+    animation-name: fadeInTop; /* Имя для вызова функции */
+    animation-duration: 1s; /* Продолжительность анимации */
+    animation-delay: 0.5s; /* Задержка */
+    animation-fill-mode: forwards;
+    /* Остановка после конца анимации */
+}
+@keyframes fadeInTop {
+    /* Правило @keyframes устанавливает ключевые
+     кадры при анимации элемента.*/
+    from{
+        top: -50%;
+    }
+    to{
+        top: 0;
+    }
+}
+.menu {
+    position: absolute;
+    height: 50px; width: 100%;
+    background: #22ff3a;
+    border-bottom: 10px solid #1618ff;
+    top:-50px;
+    /*Анимация*/
+    transition-property: top;
+    /*Устанавлвает имя стилевого свойства*/
+    transition-duration: 2s;
+    /* длительность анимации*/
+
+
+}
+body{
+    background-color: #eefeed;
+    border: thin #369993 solid;
+    border-radius: 50px;
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+}
+
+footer {
+    background-color: #7695FE;
+    border: thin #999558 solid;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+h3{
+    color: aquamarine;
+}
+
+p{ color: #139919}
+
+.New{
+    color: blueviolet;
+}
+p.New{
+    color: #2b554b;
+}
+h2.darkred{
+    color: blueviolet;
+}
+p.red{
+    color: #ff0e13;
+}
+
+
+ul{
+    color: #5eff7c;
+}
+
+img{
+    border-radius: 10px;
+}
